@@ -1,30 +1,66 @@
 const books = [
   {
-    title: "The Focused Mind",
-    author: "Mind Book Editorial",
-    category: "Self Growth",
-    pages: 18,
-    description: "A short guide about focus, reading habits, and building a clear learning routine.",
-    pdf: "assets/books/the-focused-mind.pdf",
+    title: "Rich Dad Poor Dad",
+    author: "Local Collection",
+    category: "Finance",
+    pages: 241,
+    description: "Read or download Rich Dad Poor Dad, added from your local book collection. Category: Finance.",
+    pdf: "assets/books/rich-dad-poor-dad.pdf",
     color: "linear-gradient(135deg, #7c3aed, #2563eb)"
   },
   {
-    title: "Digital Reading Guide",
-    author: "Mind Book Library",
-    category: "Education",
-    pages: 12,
-    description: "Helpful tips for using PDF books, saving notes, and organizing personal study material.",
-    pdf: "assets/books/digital-reading-guide.pdf",
+    title: "The Boy Who Did Not Sign",
+    author: "Local Collection",
+    category: "Fiction",
+    pages: 313,
+    description: "Read or download The Boy Who Did Not Sign, added from your local book collection. Category: Fiction.",
+    pdf: "assets/books/the-boy-who-did-not-sign.pdf",
     color: "linear-gradient(135deg, #0f766e, #14b8a6)"
   },
   {
-    title: "Knowledge Planner",
-    author: "Mind Book Studio",
+    title: "Atomic Habits",
+    author: "Local Collection",
     category: "Productivity",
-    pages: 10,
-    description: "A compact printable planner for tracking books, chapters, ideas, and downloads.",
-    pdf: "assets/books/knowledge-planner.pdf",
+    pages: 386,
+    description: "Read or download Atomic Habits, added from your local book collection. Category: Productivity.",
+    pdf: "assets/books/atomic-habits.pdf",
     color: "linear-gradient(135deg, #c2410c, #f59e0b)"
+  },
+  {
+    title: "Ikigai",
+    author: "Local Collection",
+    category: "Self Growth",
+    pages: 123,
+    description: "Read or download Ikigai, added from your local book collection. Category: Self Growth.",
+    pdf: "assets/books/ikigai.pdf",
+    color: "linear-gradient(135deg, #be123c, #f43f5e)"
+  },
+  {
+    title: "redirection-11",
+    author: "Local Collection",
+    category: "General",
+    pages: 227,
+    description: "Read or download redirection-11, added from your local book collection. Category: General.",
+    pdf: "assets/books/redirection-11.pdf",
+    color: "linear-gradient(135deg, #4338ca, #06b6d4)"
+  },
+  {
+    title: "Talking with Psychopaths and Savages",
+    author: "Local Collection",
+    category: "Psychology",
+    pages: 140,
+    description: "Read or download Talking with Psychopaths and Savages, added from your local book collection. Category: Psychology.",
+    pdf: "assets/books/talking-with-psychopaths-and-savages.pdf",
+    color: "linear-gradient(135deg, #166534, #84cc16)"
+  },
+  {
+    title: "The Courage to be Disliked How to Change Your Life and Achieve Real",
+    author: "Local Collection",
+    category: "Philosophy",
+    pages: 254,
+    description: "Read or download The Courage to be Disliked How to Change Your Life and Achieve Real, added from your local book collection. Category: Philosophy.",
+    pdf: "assets/books/the-courage-to-be-disliked-how-to-change-your-life-and-achieve-real.pdf",
+    color: "linear-gradient(135deg, #581c87, #a855f7)"
   }
 ];
 
