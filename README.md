@@ -23,23 +23,18 @@ Mind Book is a professional static website for reading and downloading PDF books
    assets/books/my-book.pdf
    ```
 
-2. Open `script.js`.
+2. Sync the catalog automatically:
 
-3. Add a new object inside the `books` list:
-
-   ```js
-   {
-     title: "My Book Title",
-     author: "Author Name",
-     category: "Education",
-     pages: 120,
-     description: "Short description of the book.",
-     pdf: "assets/books/my-book.pdf",
-     color: "linear-gradient(135deg, #7c3aed, #f59e0b)"
-   }
+   ```bash
+   python tools/sync_catalog.py
+   python tools/verify_catalog.py
    ```
 
-4. Save the file and open `index.html` in your browser.
+   The sync script adds any PDF in `assets/books/` to the `books` list in `script.js`, so it can appear on the website.
+
+3. Optional: open `script.js` if you want to customize the generated title, author, category, description, or color.
+
+4. Save the files and open `index.html` in your browser.
 
 ## Publishing
 

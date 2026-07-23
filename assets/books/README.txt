@@ -1,6 +1,8 @@
 Put your PDF files in this folder.
 
-After copying a PDF here, open ../../script.js and add it to the books array.
+After copying a PDF here, go to the MindBook folder and run:
 
-Example PDF path to use in script.js:
-assets/books/my-book.pdf
+python tools\sync_catalog.py
+python tools\verify_catalog.py
+
+The sync command adds PDFs from this folder to ../../script.js so they show on the website.
