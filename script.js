@@ -5,7 +5,7 @@ const books = [
     category: "Finance",
     pages: 241,
     description: "Read or download Rich Dad Poor Dad, added from your local book collection. Category: Finance.",
-    pdf: "assets/books/rich-dad-poor-dad.pdf",
+    pdf: "assets/books/rich-dad-poor-dad-2.pdf",
     color: "linear-gradient(135deg, #7c3aed, #2563eb)"
   },
 {
@@ -14,8 +14,8 @@ const books = [
     category: "Fiction",
     pages: 313,
     description: "Read or download The Boy Who Did Not Sign, added from your local book collection. Category: Fiction.",
-    pdf: "assets/books/the-boy-who-did-not-sign.pdf",
-    color: "linear-gradient(135deg, #0f766e, #14b8a6)"
+    pdf: "assets/books/the-boy-who-did-not-sign-2.pdf",
+    color: "linear-gradient(135deg, #0f766e, #0ee0c8)"
   },
 {
     title: "Atomic Habits",
@@ -23,7 +23,7 @@ const books = [
     category: "Productivity",
     pages: 386,
     description: "Read or download Atomic Habits, added from your local book collection. Category: Productivity.",
-    pdf: "assets/books/atomic-habits.pdf",
+    pdf: "assets/books/atomic-habits-2.pdf",
     color: "linear-gradient(135deg, #c2410c, #f59e0b)"
   },
 {
@@ -32,26 +32,8 @@ const books = [
     category: "Self Growth",
     pages: 123,
     description: "Read or download Ikigai, added from your local book collection. Category: Self Growth.",
-    pdf: "assets/books/ikigai.pdf",
+    pdf: "assets/books/ikigai-2.pdf",
     color: "linear-gradient(135deg, #be123c, #f43f5e)"
-  },
-{
-    title: "redirection-11",
-    author: "Local Collection",
-    category: "General",
-    pages: 227,
-    description: "Read or download redirection-11, added from your local book collection. Category: General.",
-    pdf: "assets/books/redirection-11.pdf",
-    color: "linear-gradient(135deg, #4338ca, #06b6d4)"
-  },
-{
-    title: "Talking with Psychopaths and Savages",
-    author: "Local Collection",
-    category: "Psychology",
-    pages: 140,
-    description: "Read or download Talking with Psychopaths and Savages, added from your local book collection. Category: Psychology.",
-    pdf: "assets/books/talking-with-psychopaths-and-savages.pdf",
-    color: "linear-gradient(135deg, #166534, #84cc16)"
   },
 {
     title: "The Courage to be Disliked How to Change Your Life and Achieve Real",
@@ -59,35 +41,17 @@ const books = [
     category: "Philosophy",
     pages: 254,
     description: "Read or download The Courage to be Disliked How to Change Your Life and Achieve Real, added from your local book collection. Category: Philosophy.",
-    pdf: "assets/books/the-courage-to-be-disliked-how-to-change-your-life-and-achieve-real.pdf",
-    color: "linear-gradient(135deg, #581c87, #a855f7)"
+    pdf: "assets/books/the-courage-to-be-disliked-how-to-change-your-life-and-achieve-real-2.pdf",
+    color: "linear-gradient(135deg, #4338ca, #06b6d4)"
   },
-{
-    title: "Digital Reading Guide",
-    author: "Local Collection",
-    category: "Education",
-    pages: 1,
-    description: "Read or download Digital Reading Guide, added from your local book collection. Category: Education.",
-    pdf: "assets/books/digital-reading-guide.pdf",
-    color: "linear-gradient(135deg, #7c3aed, #2563eb)"
-  },
-{
-    title: "Knowledge Planner",
+  {
+    title: "Atomic Habits",
     author: "Local Collection",
     category: "Productivity",
-    pages: 1,
-    description: "Read or download Knowledge Planner, added from your local book collection. Category: Productivity.",
-    pdf: "assets/books/knowledge-planner.pdf",
-    color: "linear-gradient(135deg, #0f766e, #14b8a6)"
-  },
-{
-    title: "The Focused Mind",
-    author: "Local Collection",
-    category: "Productivity",
-    pages: 1,
-    description: "Read or download The Focused Mind, added from your local book collection. Category: Productivity.",
-    pdf: "assets/books/the-focused-mind.pdf",
-    color: "linear-gradient(135deg, #c2410c, #f59e0b)"
+    pages: 386,
+    description: "Read or download Atomic Habits, added from your local book collection. Category: Productivity.",
+    pdf: "assets/books/atomic-habits.pdf",
+    color: "linear-gradient(135deg, #166534, #84cc16)"
   },
   {
     title: "Bhagata Gita",
@@ -96,7 +60,115 @@ const books = [
     pages: 428,
     description: "Read or download Bhagata Gita, added from your local book collection. Category: General.",
     pdf: "assets/books/bhagata gita.pdf",
+    color: "linear-gradient(135deg, #581c87, #a855f7)"
+  },
+  {
+    title: "Clearthinking",
+    author: "Local Collection",
+    category: "General",
+    pages: 289,
+    description: "Read or download Clearthinking, added from your local book collection. Category: General.",
+    pdf: "assets/books/ClearThinking.pdf",
+    color: "linear-gradient(135deg, #7c3aed, #2563eb)"
+  },
+  {
+    title: "Deep Work",
+    author: "Local Collection",
+    category: "General",
+    pages: 190,
+    description: "Read or download Deep Work, added from your local book collection. Category: General.",
+    pdf: "assets/books/Deep Work.pdf",
+    color: "linear-gradient(135deg, #0f766e, #14b8a6)"
+  },
+  {
+    title: "Ego Is The Enenmy",
+    author: "Local Collection",
+    category: "General",
+    pages: 168,
+    description: "Read or download Ego Is The Enenmy, added from your local book collection. Category: General.",
+    pdf: "assets/books/Ego is the Enenmy.pdf",
+    color: "linear-gradient(135deg, #c2410c, #f59e0b)"
+  },
+  {
+    title: "Ikigai",
+    author: "Local Collection",
+    category: "Self Growth",
+    pages: 123,
+    description: "Read or download Ikigai, added from your local book collection. Category: Self Growth.",
+    pdf: "assets/books/ikigai.pdf",
     color: "linear-gradient(135deg, #be123c, #f43f5e)"
+  },
+  {
+    title: "Rich Dad Poor Dad",
+    author: "Local Collection",
+    category: "Finance",
+    pages: 241,
+    description: "Read or download Rich Dad Poor Dad, added from your local book collection. Category: Finance.",
+    pdf: "assets/books/rich-dad-poor-dad.pdf",
+    color: "linear-gradient(135deg, #4338ca, #06b6d4)"
+  },
+  {
+    title: "Talking With Psychopaths And Savages",
+    author: "Local Collection",
+    category: "Psychology",
+    pages: 227,
+    description: "Read or download Talking With Psychopaths And Savages, added from your local book collection. Category: Psychology.",
+    pdf: "assets/books/talking with psychopaths and savages.pdf",
+    color: "linear-gradient(135deg, #166534, #84cc16)"
+  },
+  {
+    title: "The 48 Laws Of Power",
+    author: "Local Collection",
+    category: "General",
+    pages: 476,
+    description: "Read or download The 48 Laws Of Power, added from your local book collection. Category: General.",
+    pdf: "assets/books/The 48 Laws Of Power.pdf",
+    color: "linear-gradient(135deg, #581c87, #a855f7)"
+  },
+  {
+    title: "The Art Of Persuasion",
+    author: "Local Collection",
+    category: "General",
+    pages: 193,
+    description: "Read or download The Art Of Persuasion, added from your local book collection. Category: General.",
+    pdf: "assets/books/The Art of Persuasion.pdf",
+    color: "linear-gradient(135deg, #7c3aed, #2563eb)"
+  },
+  {
+    title: "The Boy Who Did Not Sign",
+    author: "Local Collection",
+    category: "Fiction",
+    pages: 313,
+    description: "Read or download The Boy Who Did Not Sign, added from your local book collection. Category: Fiction.",
+    pdf: "assets/books/the-boy-who-did-not-sign.pdf",
+    color: "linear-gradient(135deg, #0f766e, #14b8a6)"
+  },
+  {
+    title: "The Courage To Be Disliked How To Change Your Life And Achieve Real",
+    author: "Local Collection",
+    category: "Philosophy",
+    pages: 254,
+    description: "Read or download The Courage To Be Disliked How To Change Your Life And Achieve Real, added from your local book collection. Category: Philosophy.",
+    pdf: "assets/books/the-courage-to-be-disliked-how-to-change-your-life-and-achieve-real.pdf",
+    color: "linear-gradient(135deg, #c2410c, #f59e0b)"
+  },
+  {
+    title: "The One Thing",
+    author: "Local Collection",
+    category: "General",
+    pages: 216,
+    description: "Read or download The One Thing, added from your local book collection. Category: General.",
+    pdf: "assets/books/The-ONE-Thing.pdf",
+    color: "linear-gradient(135deg, #be123c, #f43f5e)"
+  },
+  {
+    title: "The Psychology Of Money Morgan Housel",
+    author: "Local Collection",
+    category: "General",
+    pages: 292,
+    description: "Read or download The Psychology Of Money Morgan Housel, added from your local book collection. Category: General.",
+    pdf: "assets/books/The-Psychology-of-Money-Morgan-Housel.pdf",
+    color: "linear-gradient(135deg, #4338ca, #06b6d4)"
   }
 ];
 
