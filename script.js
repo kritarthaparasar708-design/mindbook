@@ -44,7 +44,7 @@ const books = [
     pdf: "assets/books/the-courage-to-be-disliked-how-to-change-your-life-and-achieve-real-2.pdf",
     color: "linear-gradient(135deg, #4338ca, #06b6d4)"
   },
-  {
+{
     title: "Atomic Habits",
     author: "Local Collection",
     category: "Productivity",
@@ -53,7 +53,7 @@ const books = [
     pdf: "assets/books/atomic-habits.pdf",
     color: "linear-gradient(135deg, #166534, #84cc16)"
   },
-  {
+{
     title: "Bhagata Gita",
     author: "Local Collection",
     category: "General",
@@ -62,7 +62,7 @@ const books = [
     pdf: "assets/books/bhagata gita.pdf",
     color: "linear-gradient(135deg, #581c87, #a855f7)"
   },
-  {
+{
     title: "Clearthinking",
     author: "Local Collection",
     category: "General",
@@ -71,7 +71,7 @@ const books = [
     pdf: "assets/books/ClearThinking.pdf",
     color: "linear-gradient(135deg, #7c3aed, #2563eb)"
   },
-  {
+{
     title: "Deep Work",
     author: "Local Collection",
     category: "General",
@@ -80,7 +80,7 @@ const books = [
     pdf: "assets/books/Deep Work.pdf",
     color: "linear-gradient(135deg, #0f766e, #14b8a6)"
   },
-  {
+{
     title: "Ego Is The Enenmy",
     author: "Local Collection",
     category: "General",
@@ -89,7 +89,7 @@ const books = [
     pdf: "assets/books/Ego is the Enenmy.pdf",
     color: "linear-gradient(135deg, #c2410c, #f59e0b)"
   },
-  {
+{
     title: "Ikigai",
     author: "Local Collection",
     category: "Self Growth",
@@ -98,7 +98,7 @@ const books = [
     pdf: "assets/books/ikigai.pdf",
     color: "linear-gradient(135deg, #be123c, #f43f5e)"
   },
-  {
+{
     title: "Rich Dad Poor Dad",
     author: "Local Collection",
     category: "Finance",
@@ -107,7 +107,7 @@ const books = [
     pdf: "assets/books/rich-dad-poor-dad.pdf",
     color: "linear-gradient(135deg, #4338ca, #06b6d4)"
   },
-  {
+{
     title: "Talking With Psychopaths And Savages",
     author: "Local Collection",
     category: "Psychology",
@@ -116,7 +116,7 @@ const books = [
     pdf: "assets/books/talking with psychopaths and savages.pdf",
     color: "linear-gradient(135deg, #166534, #84cc16)"
   },
-  {
+{
     title: "The 48 Laws Of Power",
     author: "Local Collection",
     category: "General",
@@ -125,7 +125,7 @@ const books = [
     pdf: "assets/books/The 48 Laws Of Power.pdf",
     color: "linear-gradient(135deg, #581c87, #a855f7)"
   },
-  {
+{
     title: "The Art Of Persuasion",
     author: "Local Collection",
     category: "General",
@@ -134,7 +134,7 @@ const books = [
     pdf: "assets/books/The Art of Persuasion.pdf",
     color: "linear-gradient(135deg, #7c3aed, #2563eb)"
   },
-  {
+{
     title: "The Boy Who Did Not Sign",
     author: "Local Collection",
     category: "Fiction",
@@ -143,7 +143,7 @@ const books = [
     pdf: "assets/books/the-boy-who-did-not-sign.pdf",
     color: "linear-gradient(135deg, #0f766e, #14b8a6)"
   },
-  {
+{
     title: "The Courage To Be Disliked How To Change Your Life And Achieve Real",
     author: "Local Collection",
     category: "Philosophy",
@@ -152,7 +152,7 @@ const books = [
     pdf: "assets/books/the-courage-to-be-disliked-how-to-change-your-life-and-achieve-real.pdf",
     color: "linear-gradient(135deg, #c2410c, #f59e0b)"
   },
-  {
+{
     title: "The One Thing",
     author: "Local Collection",
     category: "General",
@@ -161,7 +161,7 @@ const books = [
     pdf: "assets/books/The-ONE-Thing.pdf",
     color: "linear-gradient(135deg, #be123c, #f43f5e)"
   },
-  {
+{
     title: "The Psychology Of Money Morgan Housel",
     author: "Local Collection",
     category: "General",
@@ -169,6 +169,87 @@ const books = [
     description: "Read or download The Psychology Of Money Morgan Housel, added from your local book collection. Category: General.",
     pdf: "assets/books/The-Psychology-of-Money-Morgan-Housel.pdf",
     color: "linear-gradient(135deg, #4338ca, #06b6d4)"
+  },
+  {
+    title: "Evolutionary Psychology By Lance Workman And Will Reader",
+    author: "Local Collection",
+    category: "General",
+    pages: 1,
+    description: "Read or download Evolutionary Psychology By Lance Workman And Will Reader, added from your local book collection. Category: General.",
+    pdf: "assets/books/Evolutionary Psychology by Lance Workman and Will Reader.pdf",
+    color: "linear-gradient(135deg, #166534, #84cc16)"
+  },
+  {
+    title: "Harrypotter Complete Volume",
+    author: "Local Collection",
+    category: "General",
+    pages: 3623,
+    description: "Read or download Harrypotter Complete Volume, added from your local book collection. Category: General.",
+    pdf: "assets/books/Harrypotter Complete Volume.pdf",
+    color: "linear-gradient(135deg, #581c87, #a855f7)"
+  },
+  {
+    title: "No Rules Rules",
+    author: "Local Collection",
+    category: "General",
+    pages: 376,
+    description: "Read or download No Rules Rules, added from your local book collection. Category: General.",
+    pdf: "assets/books/No Rules Rules.pdf",
+    color: "linear-gradient(135deg, #7c3aed, #2563eb)"
+  },
+  {
+    title: "The Hard Thing About Hard Things",
+    author: "Local Collection",
+    category: "General",
+    pages: 238,
+    description: "Read or download The Hard Thing About Hard Things, added from your local book collection. Category: General.",
+    pdf: "assets/books/The Hard Thing About Hard Things.pdf",
+    color: "linear-gradient(135deg, #0f766e, #14b8a6)"
+  },
+  {
+    title: "The Story Of The Human Body",
+    author: "Local Collection",
+    category: "General",
+    pages: 548,
+    description: "Read or download The Story Of The Human Body, added from your local book collection. Category: General.",
+    pdf: "assets/books/The Story of the Human Body.pdf",
+    color: "linear-gradient(135deg, #c2410c, #f59e0b)"
+  },
+  {
+    title: "The Art Of Seduction",
+    author: "Local Collection",
+    category: "General",
+    pages: 1570,
+    description: "Read or download The Art Of Seduction, added from your local book collection. Category: General.",
+    pdf: "assets/books/the-art-of-seduction.pdf",
+    color: "linear-gradient(135deg, #be123c, #f43f5e)"
+  },
+  {
+    title: "The Laws Of Human Nature By Robert Greene Z Lib.Org",
+    author: "Local Collection",
+    category: "General",
+    pages: 690,
+    description: "Read or download The Laws Of Human Nature By Robert Greene Z Lib.Org, added from your local book collection. Category: General.",
+    pdf: "assets/books/The-Laws-of-Human-Nature-by-Robert-Greene-z-lib.org_.pdf",
+    color: "linear-gradient(135deg, #4338ca, #06b6d4)"
+  },
+  {
+    title: "Thinking, Fast And Slow",
+    author: "Local Collection",
+    category: "General",
+    pages: 468,
+    description: "Read or download Thinking, Fast And Slow, added from your local book collection. Category: General.",
+    pdf: "assets/books/Thinking, Fast and Slow.pdf",
+    color: "linear-gradient(135deg, #166534, #84cc16)"
+  },
+  {
+    title: "Zero To One",
+    author: "Local Collection",
+    category: "General",
+    pages: 213,
+    description: "Read or download Zero To One, added from your local book collection. Category: General.",
+    pdf: "assets/books/Zero to One.pdf",
+    color: "linear-gradient(135deg, #581c87, #a855f7)"
   }
 ];
 
