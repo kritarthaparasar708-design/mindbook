@@ -170,7 +170,7 @@ const books = [
     pdf: "assets/books/The-Psychology-of-Money-Morgan-Housel.pdf",
     color: "linear-gradient(135deg, #4338ca, #06b6d4)"
   },
-  {
+{
     title: "Evolutionary Psychology By Lance Workman And Will Reader",
     author: "Local Collection",
     category: "General",
@@ -179,7 +179,7 @@ const books = [
     pdf: "assets/books/Evolutionary Psychology by Lance Workman and Will Reader.pdf",
     color: "linear-gradient(135deg, #166534, #84cc16)"
   },
-  {
+{
     title: "Harrypotter Complete Volume",
     author: "Local Collection",
     category: "General",
@@ -188,7 +188,7 @@ const books = [
     pdf: "assets/books/Harrypotter Complete Volume.pdf",
     color: "linear-gradient(135deg, #581c87, #a855f7)"
   },
-  {
+{
     title: "No Rules Rules",
     author: "Local Collection",
     category: "General",
@@ -197,7 +197,7 @@ const books = [
     pdf: "assets/books/No Rules Rules.pdf",
     color: "linear-gradient(135deg, #7c3aed, #2563eb)"
   },
-  {
+{
     title: "The Hard Thing About Hard Things",
     author: "Local Collection",
     category: "General",
@@ -206,7 +206,7 @@ const books = [
     pdf: "assets/books/The Hard Thing About Hard Things.pdf",
     color: "linear-gradient(135deg, #0f766e, #14b8a6)"
   },
-  {
+{
     title: "The Story Of The Human Body",
     author: "Local Collection",
     category: "General",
@@ -215,7 +215,7 @@ const books = [
     pdf: "assets/books/The Story of the Human Body.pdf",
     color: "linear-gradient(135deg, #c2410c, #f59e0b)"
   },
-  {
+{
     title: "The Art Of Seduction",
     author: "Local Collection",
     category: "General",
@@ -224,7 +224,7 @@ const books = [
     pdf: "assets/books/the-art-of-seduction.pdf",
     color: "linear-gradient(135deg, #be123c, #f43f5e)"
   },
-  {
+{
     title: "The Laws Of Human Nature By Robert Greene Z Lib.Org",
     author: "Local Collection",
     category: "General",
@@ -233,7 +233,7 @@ const books = [
     pdf: "assets/books/The-Laws-of-Human-Nature-by-Robert-Greene-z-lib.org_.pdf",
     color: "linear-gradient(135deg, #4338ca, #06b6d4)"
   },
-  {
+{
     title: "Thinking, Fast And Slow",
     author: "Local Collection",
     category: "General",
@@ -242,7 +242,7 @@ const books = [
     pdf: "assets/books/Thinking, Fast and Slow.pdf",
     color: "linear-gradient(135deg, #166534, #84cc16)"
   },
-  {
+{
     title: "Zero To One",
     author: "Local Collection",
     category: "General",
@@ -250,6 +250,42 @@ const books = [
     description: "Read or download Zero To One, added from your local book collection. Category: General.",
     pdf: "assets/books/Zero to One.pdf",
     color: "linear-gradient(135deg, #581c87, #a855f7)"
+  },
+  {
+    title: "All In In One Computer Science",
+    author: "Local Collection",
+    category: "General",
+    pages: 271,
+    description: "Read or download All In In One Computer Science, added from your local book collection. Category: General.",
+    pdf: "assets/books/All IN in one computer science.pdf",
+    color: "linear-gradient(135deg, #7c3aed, #2563eb)"
+  },
+  {
+    title: "Civilization And Its Discontents",
+    author: "Local Collection",
+    category: "General",
+    pages: 116,
+    description: "Read or download Civilization And Its Discontents, added from your local book collection. Category: General.",
+    pdf: "assets/books/Civilization and Its Discontents.pdf",
+    color: "linear-gradient(135deg, #0f766e, #14b8a6)"
+  },
+  {
+    title: "Computer Science Ncrt",
+    author: "Local Collection",
+    category: "General",
+    pages: 260,
+    description: "Read or download Computer Science Ncrt, added from your local book collection. Category: General.",
+    pdf: "assets/books/COMPUTER SCIENCE NCRT.pdf",
+    color: "linear-gradient(135deg, #c2410c, #f59e0b)"
+  },
+  {
+    title: "Meditations Marcus Aurelius",
+    author: "Local Collection",
+    category: "General",
+    pages: 127,
+    description: "Read or download Meditations Marcus Aurelius, added from your local book collection. Category: General.",
+    pdf: "assets/books/Meditations - Marcus Aurelius.pdf",
+    color: "linear-gradient(135deg, #be123c, #f43f5e)"
   }
 ];
 
