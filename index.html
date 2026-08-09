@@ -3,145 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mind Book is a professional digital library for reading and downloading PDF books." />
+  <meta name="description" content="Mind Book is a modern digital library for reading and downloading PDF books." />
   <title>Mind Book | Read and Download PDF Books</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar" aria-label="Main navigation">
       <a class="brand" href="#top" aria-label="Mind Book home">
-        <span class="brand-mark">MB</span>
-        <span>Mind <strong>Book</strong></span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" aria-label="Book logo">
+            <path d="M4.5 5.75A2.75 2.75 0 0 1 7.25 3H12v16.5H7.25A2.75 2.75 0 0 0 4.5 22V5.75Z" />
+            <path d="M19.5 5.75A2.75 2.75 0 0 0 16.75 3H12v16.5h4.75A2.75 2.75 0 0 1 19.5 22V5.75Z" />
+          </svg>
+        </span>
+        <span>Mind Book</span>
       </a>
+
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+
       <div class="nav-links" data-nav-links>
-        <a href="#library">Library</a>
+        <a class="active" href="#library">Library</a>
         <a href="#reader">Reader</a>
-        <a href="#add-books">Add Books</a>
-        <a class="nav-cta" href="#library">Explore PDFs</a>
+        <a href="#library">Add Books</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+      </div>
+
+      <div class="nav-actions" aria-label="Display and library actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark and light theme" aria-pressed="true">
+          <span class="sun" aria-hidden="true">☼</span>
+          <span class="toggle-track"><span class="toggle-knob">☾</span></span>
+        </button>
+        <a class="explore-btn" href="#library">Explore PDFs</a>
       </div>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero section-pad">
-      <div class="hero-content">
-        <p class="eyebrow">Professional digital PDF library</p>
-        <h1>Read, collect, and download knowledge from <span>Mind Book</span>.</h1>
-        <p class="hero-copy">A clean book website where readers can open PDFs in the browser, download them instantly, and discover titles through a polished searchable catalog.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#library">Start Reading</a>
-          <a class="btn btn-secondary" href="#add-books">How to Add PDFs</a>
+    <section class="hero section-pad" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-content fade-in">
+          <p class="eyebrow">Welcome to Mind Book</p>
+          <h1 id="hero-title">Read, collect, and download knowledge from <span>Mind Book.</span></h1>
+          <p class="hero-copy">Your open digital library for free PDFs. Explore books across different categories, read inside the built-in reader, and download for offline learning anytime, anywhere.</p>
+
+          <label class="search-box hero-search" for="searchInput">
+            <span aria-hidden="true">⌕</span>
+            <input id="searchInput" type="search" placeholder="Search for books, authors, topics..." autocomplete="off" />
+          </label>
+
+          <div class="quick-categories" id="categories" aria-label="Book categories">
+            <div class="filter-pills" id="categoryFilters"></div>
+          </div>
         </div>
-        <div class="trust-row" aria-label="Website features">
-          <span>✓ In-browser PDF reader</span>
-          <span>✓ Direct downloads</span>
-          <span>✓ Easy book updates</span>
-        </div>
+
+        <aside class="hero-art fade-in" aria-label="Mind Book preview">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="floating-card top-card">
+            <span class="mini-icon" aria-hidden="true">▣</span>
+            <div>
+              <strong>Thousands</strong>
+              <small>of Books</small>
+            </div>
+          </div>
+          <div class="book-preview">
+            <div class="large-cover">
+              <span>Mind</span>
+              <strong>Book</strong>
+            </div>
+            <div class="preview-lines" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="floating-card bottom-card">
+            <span class="mini-icon" aria-hidden="true">ϟ</span>
+            <div>
+              <strong>100% Free</strong>
+              <small>For Everyone</small>
+            </div>
+          </div>
+        </aside>
       </div>
-      <aside class="hero-card" aria-label="Featured reader preview">
-        <div class="floating-card top-card">
-          <span class="mini-icon">📖</span>
-          <div>
-            <strong>Featured Shelf</strong>
-            <small>Curated PDF books</small>
-          </div>
-        </div>
-        <div class="book-preview">
-          <div class="book-cover large-cover">
-            <span>Mind</span>
-            <strong>Book</strong>
-          </div>
-          <div class="preview-lines">
-            <span></span><span></span><span></span><span></span>
-          </div>
-        </div>
-        <div class="floating-card bottom-card">
-          <span class="mini-icon">⬇</span>
-          <div>
-            <strong>One-click download</strong>
-            <small>PDF files ready</small>
-          </div>
-        </div>
-      </aside>
+
+      <div class="stats" aria-label="Library highlights">
+        <article class="stat-card">
+          <span class="stat-icon book" aria-hidden="true">▱</span>
+          <div><strong><span data-count="books">0</span>+</strong><p>Books Available</p></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon clock" aria-hidden="true">◷</span>
+          <div><strong>24/7</strong><p>Free Access</p></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon pdf" aria-hidden="true">▤</span>
+          <div><strong>PDF</strong><p>Format</p></div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon gift" aria-hidden="true">🎁</span>
+          <div><strong>Free</strong><p>Forever</p></div>
+        </article>
+      </div>
     </section>
 
-    <section class="stats section-pad" aria-label="Library highlights">
-      <div><strong data-count="books">0</strong><span>Books listed</span></div>
-      <div><strong>24/7</strong><span>Reader access</span></div>
-      <div><strong>PDF</strong><span>Browser reading</span></div>
-      <div><strong>Free</strong><span>Download controls</span></div>
-    </section>
-
-    <section id="library" class="library section-pad">
+    <section id="library" class="library section-pad" aria-labelledby="library-title">
       <div class="section-heading">
         <p class="eyebrow">Digital library</p>
-        <h2>Explore the PDF collection</h2>
+        <h2 id="library-title">Explore the PDF collection</h2>
         <p>Search by title, author, description, or choose a category to find the right book quickly.</p>
-      </div>
-
-      <div class="library-toolbar">
-        <label class="search-box" for="searchInput">
-          <span>🔎</span>
-          <input id="searchInput" type="search" placeholder="Search books, authors, topics..." autocomplete="off" />
-        </label>
-        <div class="filter-pills" id="categoryFilters" aria-label="Book categories"></div>
       </div>
 
       <div class="book-grid" id="bookGrid" aria-live="polite"></div>
       <p class="empty-state" id="emptyState" hidden>No books found. Try another search or category.</p>
     </section>
 
-    <section id="reader" class="reader-info section-pad">
-      <div class="reader-panel">
-        <div>
-          <p class="eyebrow">Built-in PDF reader</p>
-          <h2>Open any book without leaving the website.</h2>
-          <p>Click <strong>Read PDF</strong> on a book card and Mind Book opens it inside a comfortable reading window. Readers can also download the same file for offline reading.</p>
+    <section class="donation section-pad" aria-labelledby="donation-title">
+      <div class="donation-panel fade-in">
+        <div class="donation-copy">
+          <h2 id="donation-title">Support Mind Book ❤️</h2>
+          <p>Mind Book is completely free for everyone. Your donation helps us keep the library running, improve the reading experience, and make learning easier for all readers.</p>
+          <div class="donation-buttons" aria-label="Donation amount options">
+            <button type="button">₹50</button>
+            <button class="active" type="button">₹100</button>
+            <button type="button">₹200</button>
+            <button type="button">Custom</button>
+          </div>
+          <div class="qr-row">
+            <div class="qr-placeholder" aria-label="QR Code placeholder">
+              <span class="brand-mark small" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4.5 5.75A2.75 2.75 0 0 1 7.25 3H12v16.5H7.25A2.75 2.75 0 0 0 4.5 22V5.75Z" />
+                  <path d="M19.5 5.75A2.75 2.75 0 0 0 16.75 3H12v16.5h4.75A2.75 2.75 0 0 1 19.5 22V5.75Z" />
+                </svg>
+              </span>
+            </div>
+            <div>
+              <h3>Or Scan & Pay</h3>
+              <div class="payment-grid" aria-label="Supported payments">
+                <span>UPI</span>
+                <span>Google Pay</span>
+                <span>PhonePe</span>
+                <span>Paytm</span>
+                <span>Visa</span>
+                <span>Mastercard</span>
+                <span>RuPay</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <a class="btn btn-primary" href="#library">Choose a Book</a>
+
+        <div class="donation-card" aria-label="Donation form preview">
+          <h3>Donate with Card</h3>
+          <label><span>Card Number</span><input type="text" inputmode="numeric" placeholder="Card Number" aria-label="Card number preview" /></label>
+          <div class="card-row">
+            <label><span>Expiry</span><input type="text" placeholder="MM / YY" aria-label="Expiry date preview" /></label>
+            <label><span>CVC</span><input type="text" inputmode="numeric" placeholder="CVC" aria-label="CVC preview" /></label>
+          </div>
+          <label><span>Name</span><input type="text" placeholder="Name on Card" aria-label="Name on card preview" /></label>
+          <button type="button" class="btn btn-primary donation-submit">Donate Securely</button>
+          <p class="secure-note">♡ Payment UI preview only. No payment gateway is connected.</p>
+        </div>
       </div>
     </section>
 
-    <section id="add-books" class="add-books section-pad">
-      <div class="section-heading">
-        <p class="eyebrow">Owner instructions</p>
-        <h2>Add your own book PDFs</h2>
-        <p>This website is static, so adding books is simple and fast.</p>
-      </div>
-      <div class="steps">
-        <article>
-          <span>1</span>
-          <h3>Copy the PDF</h3>
-          <p>Place your PDF file inside <code>assets/books/</code>. Example: <code>my-book.pdf</code>.</p>
-        </article>
-        <article>
-          <span>2</span>
-          <h3>Sync the catalog</h3>
-          <p>Run <code>python tools/sync_catalog.py</code>, then <code>python tools/verify_catalog.py</code>. Any PDF in <code>assets/books/</code> will be added to <code>script.js</code> so it appears on the site.</p>
-        </article>
-        <article>
-          <span>3</span>
-          <h3>Publish</h3>
-          <p>Upload the whole MindBook folder to your hosting. Readers can read and download immediately.</p>
-        </article>
+    <section id="reader" class="how-to section-pad" aria-labelledby="how-title">
+      <div class="how-panel fade-in">
+        <div class="how-heading">
+          <span class="how-heading-icon" aria-hidden="true">▰</span>
+          <div>
+            <h2 id="how-title">How to Read and Download Books</h2>
+            <p>Mind Book makes it easy to read online or download for offline reading.</p>
+          </div>
+        </div>
+
+        <div class="steps" aria-label="How to read and download books">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <span class="step-icon" aria-hidden="true">📘</span>
+            <h3>Choose a Book</h3>
+            <p>Browse the library and select any book.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <span class="step-icon" aria-hidden="true">📖</span>
+            <h3>Read Online</h3>
+            <p>Press Read PDF to open the built-in reader.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <span class="step-icon" aria-hidden="true">⬇</span>
+            <h3>Download PDF</h3>
+            <p>Press Download to save the PDF.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">4</span>
+            <span class="step-icon" aria-hidden="true">💻</span>
+            <h3>Enjoy Anywhere</h3>
+            <p>Read on your phone, tablet or computer anytime.</p>
+          </article>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div>
+  <footer id="about" class="site-footer">
+    <div class="footer-branding">
       <a class="brand" href="#top">
-        <span class="brand-mark">MB</span>
-        <span>Mind <strong>Book</strong></span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M4.5 5.75A2.75 2.75 0 0 1 7.25 3H12v16.5H7.25A2.75 2.75 0 0 0 4.5 22V5.75Z" />
+            <path d="M19.5 5.75A2.75 2.75 0 0 0 16.75 3H12v16.5h4.75A2.75 2.75 0 0 1 19.5 22V5.75Z" />
+          </svg>
+        </span>
+        <span>Mind Book</span>
       </a>
-      <p>Read smarter. Download faster. Keep learning.</p>
+      <p>Read smarter.<br />Download faster.<br />Keep learning.</p>
     </div>
-    <p>© <span id="year"></span> Mind Book. All rights reserved.</p>
+    <p>© <span id="year">2026</span> Mind Book. All rights reserved.</p>
   </footer>
 
   <div class="modal" id="pdfModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>

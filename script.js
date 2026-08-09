@@ -304,6 +304,7 @@ const modalTitle = document.getElementById("modalTitle");
 const modalDownload = document.getElementById("modalDownload");
 const navLinks = document.querySelector("[data-nav-links]");
 const menuToggle = document.querySelector(".menu-toggle");
+const themeToggle = document.getElementById("themeToggle");
 let readerRequestId = 0;
 
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -362,6 +363,10 @@ function pdfCandidates(path) {
 async function resolvePdfUrl(path) {
   const candidates = pdfCandidates(path);
 
+  if (window.location.protocol === "file:") {
+    return candidates[0] || path;
+  }
+
   for (const url of candidates) {
     try {
       const response = await fetch(url, { method: "HEAD", cache: "no-store" });
@@ -384,14 +389,17 @@ function renderBooks() {
         <span class="cover-category">${book.category}</span>
         <span class="cover-title">${book.title}</span>
       </div>
-      <div class="book-meta">
-        <span>${book.author}</span>
-        <span>${book.pages} pages</span>
-      </div>
-      <p>${book.description}</p>
-      <div class="card-actions">
-        <button class="btn btn-primary" type="button" data-read-index="${index}">Read PDF</button>
-        <a class="btn btn-secondary" href="${pdfHref(book.pdf)}" download>Download</a>
+      <div class="book-details">
+        <div class="book-topline">
+          <span class="category-badge">${book.category}</span>
+          <span class="pages">${book.pages} pages</span>
+        </div>
+        <h3>${book.title}</h3>
+        <p>${book.description}</p>
+        <div class="card-actions">
+          <button class="btn btn-primary" type="button" data-read-index="${index}">Read PDF</button>
+          <a class="btn btn-secondary" href="${pdfHref(book.pdf)}" download>Download</a>
+        </div>
       </div>
     </article>
   `).join("");
@@ -458,6 +466,13 @@ navLinks.addEventListener("click", event => {
     navLinks.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
   }
+});
+
+themeToggle.addEventListener("click", () => {
+  const isLight = document.body.classList.toggle("light-mode");
+  themeToggle.setAttribute("aria-pressed", String(!isLight));
+  const knob = themeToggle.querySelector(".toggle-knob");
+  if (knob) knob.textContent = isLight ? "☀" : "☾";
 });
 
 renderCategories();
