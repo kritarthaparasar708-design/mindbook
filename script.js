@@ -1,3 +1,4 @@
+const books = [
 {
     title: "Atomic Habits",
     author: "Local Collection",
@@ -6,7 +7,8 @@
     description: "Read or download Atomic Habits, added from your local book collection. Category: Productivity.",
     pdf: "assets/books/atomic-habits.pdf",
     color: "linear-gradient(135deg, #166534, #84cc16)"
-  },{
+  },
+{
     title: "Bhagata Gita",
     author: "Local Collection",
     category: "General",
