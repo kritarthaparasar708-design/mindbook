@@ -1,49 +1,3 @@
-const books = [
-{
-    title: "Rich Dad Poor Dad",
-    author: "Local Collection",
-    category: "Finance",
-    pages: 241,
-    description: "Read or download Rich Dad Poor Dad, added from your local book collection. Category: Finance.",
-    pdf: "assets/books/rich-dad-poor-dad-2.pdf",
-    color: "linear-gradient(135deg, #7c3aed, #2563eb)"
-  },
-{
-    title: "The Boy Who Did Not Sign",
-    author: "Local Collection",
-    category: "Fiction",
-    pages: 313,
-    description: "Read or download The Boy Who Did Not Sign, added from your local book collection. Category: Fiction.",
-    pdf: "assets/books/the-boy-who-did-not-sign-2.pdf",
-    color: "linear-gradient(135deg, #0f766e, #0ee0c8)"
-  },
-{
-    title: "Atomic Habits",
-    author: "Local Collection",
-    category: "Productivity",
-    pages: 386,
-    description: "Read or download Atomic Habits, added from your local book collection. Category: Productivity.",
-    pdf: "assets/books/atomic-habits-2.pdf",
-    color: "linear-gradient(135deg, #c2410c, #f59e0b)"
-  },
-{
-    title: "Ikigai",
-    author: "Local Collection",
-    category: "Self Growth",
-    pages: 123,
-    description: "Read or download Ikigai, added from your local book collection. Category: Self Growth.",
-    pdf: "assets/books/ikigai-2.pdf",
-    color: "linear-gradient(135deg, #be123c, #f43f5e)"
-  },
-{
-    title: "The Courage to be Disliked How to Change Your Life and Achieve Real",
-    author: "Local Collection",
-    category: "Philosophy",
-    pages: 254,
-    description: "Read or download The Courage to be Disliked How to Change Your Life and Achieve Real, added from your local book collection. Category: Philosophy.",
-    pdf: "assets/books/the-courage-to-be-disliked-how-to-change-your-life-and-achieve-real-2.pdf",
-    color: "linear-gradient(135deg, #4338ca, #06b6d4)"
-  },
 {
     title: "Atomic Habits",
     author: "Local Collection",
@@ -52,8 +6,7 @@ const books = [
     description: "Read or download Atomic Habits, added from your local book collection. Category: Productivity.",
     pdf: "assets/books/atomic-habits.pdf",
     color: "linear-gradient(135deg, #166534, #84cc16)"
-  },
-{
+  },{
     title: "Bhagata Gita",
     author: "Local Collection",
     category: "General",
