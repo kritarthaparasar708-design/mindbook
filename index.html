@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -119,6 +121,31 @@
 
       <div class="book-grid" id="bookGrid" aria-live="polite"></div>
       <p class="empty-state" id="emptyState" hidden>No books found. Try another search or category.</p>
+    </section>
+
+    <section id="book-generator" class="generator section-pad" aria-labelledby="generator-title">
+      <div class="section-heading">
+        <p class="eyebrow">Create your book</p>
+        <h2 id="generator-title">Generate a PDF with an optional cover</h2>
+        <p>Upload a JPG, JPEG, PNG, or WebP cover image and it will be embedded at the top of page 1 in the downloaded PDF.</p>
+      </div>
+
+      <form class="generator-panel" id="bookGeneratorForm">
+        <label>
+          <span>Book title</span>
+          <input id="generatedBookTitle" type="text" placeholder="Enter book title" required />
+        </label>
+        <label>
+          <span>Book content</span>
+          <textarea id="generatedBookContent" rows="8" placeholder="Paste or type your book content" required></textarea>
+        </label>
+        <label>
+          <span>Cover image (optional)</span>
+          <input id="generatedBookCover" type="file" accept="image/jpeg,image/jpg,image/png,image/webp" />
+        </label>
+        <button class="btn btn-primary" type="submit">Download Generated PDF</button>
+        <p class="secure-note" id="generatorStatus" aria-live="polite"></p>
+      </form>
     </section>
 
     <section class="donation section-pad" aria-labelledby="donation-title">
